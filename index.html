@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="reset.css">
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -14,22 +18,32 @@
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Maggie Falkenberg</a>
+  	<a class="navbar-brand name" href="#">Maggie Falkeberg</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      	<li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
-		<li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-	    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
+  		<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+    		<ul class="navbar-nav ml-auto links">
+      			<li class="nav-item active">
+        		<a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        		<a class="nav-link" href="portfolio.html">Portfolio</a>
+      			</li>
+      			<li class="nav-item">
+    			<a class="nav-link" href="contact.html">Contact</a>
+  				</li>
+      			</li>
+    		</ul>
+		</div>
 </nav>
 
-<div class="container">
+
+<div class="fluid-container">
 	<div class="row">
-		<div class="col-md-6" id="article">
-			<div class="page-header">
+		<div class="col-md-6 col-sm-10" id="article">
           		<h1>About Me</h1>
-        	</div>
 				<img id="placeholder" src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
 				<p>
 	              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
@@ -37,10 +51,8 @@
 	              at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
 	            </p>
         </div>
-
-        <div class="col-md-1"></div>
        	
-       	<div class="col-md-4" id="connect">
+       	<div class="col-md-3 col-sm-10" id="connect">
 	       		<h3>Connect with Me</h3>
 
 	       		<a href="https://github.com/mfalkenberg" target="_blank"><img id="github" src=https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-128.png></a>
@@ -53,50 +65,7 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-<!-- <div class="container">
-    <div class="row">
-      <div class="col-md-8" id="article">
-        <div class="page-header">
-          <h1>About Me</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img id="placeholder" src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
-          </div>
-          <div class="col-md-9">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-              eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean
-              at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" id="connect">
-            <h3>Connact with me</h3>
-            <div>
-
-            	<a href="https://github.com/mfalkenberg" target="_blank"><img id="github" src=https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-128.png></a>
-
-				<a href="https://www.linkedin.com/in/maggie-falkenberg-a2b376130/" target="_blank"><img id="linkedin" src=https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-128.png></a>
-
-				<a href="https://stackoverflow.com/users/8815541/maggi-falkenberg" target="_blank"><img id="stackover" src=https://cdn3.iconfinder.com/data/icons/inficons/128/stackoverflow.png></a>
-
-          </div>
-    </div>
-</div> -->
-
-<div class="container">
+<div class="fluid-container">
   	<div class="row">
   		<div class="col-md-12">
   			<footer>© Copyright 2017 Maggie Falkenberg</footer>
